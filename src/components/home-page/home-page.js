@@ -12,7 +12,6 @@ const HomeContent = () => {
         <div className='home-page-dashboard'>
             <div className='home-page-image-section'>
                 <div className='home-page-side-img'>
-                    {/* <img src={sideImg} /> */}
                 </div>
                 <div className='home-page-profile-img'>
                     <img src={profileImg}/>
