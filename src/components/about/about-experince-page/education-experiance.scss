@@ -1,0 +1,54 @@
+@import '..//../styles/variables.scss';
+
+.education-page-container{
+    padding-left: 100px;
+
+    .edu-exp-title{
+        padding-top: 20px;
+        text-align: center;
+        margin-bottom: 80px;
+
+        .edu-exp-title h3{
+            font-size: 24px;
+        }
+    }
+}
+.edu-exp-deatails-container{
+    position: relative;
+
+    .calendar-icon{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    // top: 10px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 1;
+    border-radius: 50%;
+    color: #fff;
+    background-color: $primary-color;
+    }
+}
+.edu-exp-columns .title-detail-section::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 20px;
+    bottom: 0;
+
+    border-left: 1px solid #ddd;
+}
+.edu-exp-columns{
+position: relative;
+padding-left: 65px;
+margin-bottom: 50px;
+.date-section{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 1px 10px;
+    background-color: #ddd;
+    border-radius: 10px;
+}
+}

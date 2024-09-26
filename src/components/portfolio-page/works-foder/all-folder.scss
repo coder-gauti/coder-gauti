@@ -1,0 +1,12 @@
+.all-works-pages{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+}
+ .ant-modal-footer{
+  display: none;
+}
+.modal-card .ant-modal-content{
+  padding: 0px;
+  width: 680px;
+}

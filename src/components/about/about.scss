@@ -1,0 +1,142 @@
+@import '../styles/variables.scss';
+
+.about-contents-containers {
+    height: 100vh;
+
+    .about-title-section {
+        text-align: center;
+        width: 100%;
+        position: relative;
+        padding: 70px 0;
+    }
+
+    .about-title-section h1 {
+        height: 65px;
+        font-size: 56px;
+        font-weight: 900 !important;
+        color: black;
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    .about-title-section h1 span {
+        color: $primary-color;
+    }
+
+    .about-title-bg {
+        font-size: 110px;
+        left: 0;
+        letter-spacing: 10px;
+        line-height: .7;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        text-transform: uppercase;
+        font-weight: 800;
+        transform: translateY(-50%);
+        color: rgba(30, 37, 48, .07);
+    }
+
+    .about-body-section {
+        gap: 4%;
+        display: flex;
+        height: calc(100vh - 205px);
+        padding: 0 30px;
+
+        .personal-details-section {
+            width: 45%;
+            padding: 0 0 0 50px;
+
+            .personal-info-title h3 {
+                padding-bottom: 15px;
+                margin: 0px;
+                font-size: 26px;
+                color: $light-grey-color;
+
+            }
+
+            .personal-info-parts {
+                padding: 0px;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                list-style: none;
+            }
+
+            .personal-info-parts li {
+                padding-bottom: 25px;
+
+                .titles {
+                    color: $light-grey-color;
+                    font-weight: 500;
+                }
+
+                .values {
+                    color: black;
+                    opacity: none;
+                    font-weight: 600;
+                }
+
+                .values1 {
+                    font-weight: 600;
+                    color: #09ef09;
+                }
+            }
+        }
+
+        .work-ferformance-container {
+            width: 48%;
+
+            .boxes {
+                padding: 0 15px;
+            }
+
+            .performance-boxes {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+
+                .boxes-stats {
+                    padding: 20px 30px 25px 40px;
+                    border-radius: 5px;
+                    margin-bottom: 30px;
+                    border: 1px solid #ddd;
+                }
+                .work-digits {
+                    position: relative;
+                    display: inline-block;
+                    margin: 0;
+                    font-size: 50px;
+                    font-weight: 700;
+                    color: $primary-color;
+                
+                }
+                .work-digits::after{
+                    content: "+";
+                    position: absolute;
+                    right: -24px;
+                    font-size: 33px;
+                    font-weight: 400;
+                    top: 2px;
+                }
+                .work-texts{
+                    padding-left: 50px;
+                    font-size: 16px;
+                    font-weight: 600;
+                    text-transform: uppercase !important;
+                    color: $light-grey-color;
+                    position: relative;
+
+                }
+                .work-texts::before{
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 13px;
+                    width: 30px;
+                    height: 1px;
+                    background: #777;
+                }
+                
+            }
+        }
+    }
+}

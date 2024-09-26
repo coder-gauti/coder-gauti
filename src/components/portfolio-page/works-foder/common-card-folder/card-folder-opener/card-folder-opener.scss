@@ -1,0 +1,55 @@
+
+
+.folder-container,
+.folder-container .card-background {
+    // height: 100vh;
+    // width: 100%;
+    // position: fixed;
+    // top: 0;
+    // left: 0;
+
+    .card-opener-container {
+        // max-width: 680px;
+        // width: 80%;
+        // height: auto;
+        // position: absolute;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
+        // background-color: #252525;
+        // padding: 2rem;
+        // border-radius: 1rem;
+        // z-index: 5;
+
+
+        .card-opener-body {
+            opacity: 1;
+            transform: translateZ(0);
+        }
+
+        .card-opener-body h3 {
+            color: rgb(102, 102, 241);
+            text-transform: uppercase;
+            padding: 10px 0 20px;
+            font-weight: 700;
+            text-align: center;
+            font-size: 33px;
+            margin: 0;
+        }
+
+        .card-body-details {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 50px;
+
+            .details-texts{
+                // color: #ffff;
+                flex: 0 0 auto;
+                width: 50%;
+                height: 40px;
+            }
+        }
+
+
+    }
+}

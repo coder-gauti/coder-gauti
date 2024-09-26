@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Routing from './routing/routing';
 
 function App() {
+
+  window.addEventListener("mousemove", function (e) {
+    const cursor = document.querySelector(".cursor");
+    const cursor2 = document.querySelector(".cursor2");
+
+    const posX = e.clientX;
+    const posY = e.clientY;
+
+    cursor.style.left = `${posX}px`;
+    cursor.style.top = `${posY}px`;
+
+
+    cursor2.animate({
+      left: `${posX}px`,
+      top: `${posY}px`
+    }, { duration: 500, fill: "forwards" });
+
+
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='main-app'>
+      <Routing />
+      <div className='cursor'></div>
+      <div className='cursor2'></div>
     </div>
   );
 }

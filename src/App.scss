@@ -1,0 +1,28 @@
+@import './components/styles/variables.scss';
+
+.cursor,
+.cursor2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.cursor {
+    width: 50px;
+    height: 50px;
+    background-color: $primary-color-transparent;
+    transition: 0.25s;
+}
+
+.cursor2 {
+    width: 8px;
+    height: 8px;
+    background-color: $primary-color;
+}
+
+.main-app{
+    cursor: none;
+}

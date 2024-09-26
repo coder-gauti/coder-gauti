@@ -1,0 +1,115 @@
+@import '../styles/variables.scss';
+
+.contact-contents {
+    width: 100%;
+}
+
+.contact-contents-titles {
+    margin-left: 50px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    padding: 70px 0;
+}
+
+.contact-contents-titles h1 {
+    height: 65px;
+    font-size: 56px;
+    font-weight: 900 !important;
+    color: black;
+    text-transform: uppercase;
+    margin: 0;
+
+}
+
+.contact-contents-titles h1 span {
+    color: $primary-color;
+}
+
+.contact-title-bg {
+    font-size: 110px;
+    left: 0;
+    letter-spacing: 10px;
+    line-height: .7;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    text-transform: uppercase;
+    font-weight: 800;
+    transform: translateY(-50%);
+    color: rgba(30, 37, 48, .07);
+}
+
+.contact-contents-body-parts {
+    display: flex;
+    // width: 100%;
+    padding: 0 8%;
+    gap: 8%;
+
+    .contact-details-parts {
+        width: 35%;
+        // height: 60vh;
+    }
+
+    .contact-details-parts h3 {
+        font-size: 26px;
+        color: #666;
+        font-weight: 700;
+        margin: 0px;
+    }
+
+    .experiance-text {
+        font-size: 16px;
+    }
+
+    .personal-details-text {
+        position: relative !important;
+        font-size: 16px;
+        font-weight: 600;
+        padding-left: 50px;
+        padding-top: 5px;
+        margin-bottom: 30px;
+    }
+
+    .block-details {
+        font-size: 18px;
+        color: #666;
+        font-weight: 600;
+    }
+
+    .icons-fitting {
+        position: absolute;
+        left: 0;
+        top: 10px;
+        font-size: 33px;
+    }
+
+    .contact-medium-section {
+        width: 59%;
+        display: grid;
+        gap: 30px;
+    }
+
+    .personal-biodata {
+        display: flex;
+        width: 100%;
+        gap: 10%;
+    }
+
+    .name-input-box {
+        width: 45%;
+    }
+
+    .input-holder {
+        height: 50px;
+        border-radius: 50px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .input-text {
+        border-radius: 20px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+}

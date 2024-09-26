@@ -1,0 +1,29 @@
+.skill-page-container {
+    // height: 100vh;
+    padding-left: 20px;
+    margin-top: 20px;
+    .skills-tites{
+        padding-bottom: 30px;
+    }
+    .skills-tites h1 {
+        font-size: 36px;
+        margin: 0px;
+        text-align: center;
+    }
+
+    .skil-columns {
+        text-align: center;
+        padding-bottom: 40px;
+
+        .progress-skill-name {
+            font-size: 16px;
+            font-weight: 600;
+            margin-top: 5px;
+        }
+    }
+    
+}
+// .skill-progress-bar .ant-progress{
+//     width: 110px;
+//     height: 110px;
+// }

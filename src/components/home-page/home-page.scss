@@ -1,0 +1,118 @@
+@import '../styles/variables.scss';
+ 
+.home-page-dashboard {
+    cursor: none;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+
+.home-page-image-section {
+    position: relative;
+    display: flex;
+    width: 50%;
+    overflow: hidden;
+}
+
+.home-page-side-img {
+    background-color: #1194ff;
+    position: relative;
+    height: 200%;
+    width: 100%;
+    transform: rotate(-15deg);
+    left: -64%;
+    top: -50%;
+}
+ 
+.home-page-profile-img {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+.home-page-profile-img img {
+    box-shadow: 0 0 7px rgba(0, 0, 0, .9);
+    border-radius: 10px;
+    width: 100%;
+    height: 80vh;
+}
+
+.home-page-text-section {
+    width: 50%;
+    display: grid;
+    align-items: center;
+}
+
+.profile-deatils hr {
+    width: 20PX;
+}
+.name-profile-text, .profile-name{
+    position: relative;
+}
+
+.name-profile-text .profile-name {
+    padding-left: 50px;
+    margin: 0px;
+    font-size: 48px;
+    font-weight: 700;
+    color: $primary-color;
+}
+.name-profile-text .profile-name::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 32px;
+    height: 4px;
+    width: 40px;
+    background-color: $primary-color;
+    border-radius: 10px;
+}
+
+.role-text {
+    padding-left: 50px;
+    margin: 0px;
+    font-size: 48px;
+    font-weight: 700;
+    color: #7A7272
+}
+
+.about-text {
+    width: 80%;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.nex-page-button button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 180px;
+    height: 40px;
+    border-radius: 50px;
+    border: 1px solid $primary-color;
+    padding: 0px;
+}
+
+.nex-page-button span {
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.nex-page-button .anticon svg {
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    background: $primary-color;
+
+}
+
+
+.nex-page-button .ant-btn-default:active,
+.nex-page-button .ant-btn-default:hover {
+    color: black !important;
+    background-color: $primary-color !important;
+    border-color: $primary-color !important;
+}
